@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Massage Business</title>
+    <link href="Style.css" rel="stylesheet">
+    <link rel="Stylesheet" href="Home.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+    
+<style>
+    body {
+    margin: 0;
+    padding: 0;
+}
+
+    /* Add more styling as needed for other elements */
+    header, section, footer {
+            position: relative;
+            z-index: 1; /* Set z-index for other elements */
+        }
+          /* Add more styling as needed for other elements */
+
+    
+        .booking-images {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+            margin-bottom: 150px;
+            z-index: 1; /* Set z-index for other elements */
+        }
+
+        .booking-images a {
+            text-decoration: none;
+            color: #333;
+            text-align: center;
+            width: 20%; /* Adjust the width to control spacing between images */
+            position: relative;
+            cursor: pointer;
+            transition: transform 1.5s ease-in-out;
+        }
+
+        .booking-images a:hover {
+            transform: scale(1.2);
+        }
+
+        .booking-images img {
+            max-width: 100%;
+            max-height: auto;
+            cursor: pointer;
+        }
+
+        .booking-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80vw;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            opacity: 0;
+            transition: opacity 3s ease-in-out;
+        }
+
+        .image-container {
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .image-container::before {
+            content: attr(data-text);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 10px;
+            border-radius: 5px;
+            white-space: nowrap;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .image-container:hover::before {
+            opacity: 1;
+        }
+
+        #main-section {
+            position: relative;
+            z-index: 0;
+            overflow: hidden;
+        }
+</style>
+</head>
+       <!-- Background Video -->
+         <video autoplay muted loop id="bg-video">
+            <source src="Timeline 2.mp4" type="video/mp4">
+             Your browser does not support the video tag.
+        </video>
+<body>
+    <header>
+        <h1>Matthew's Traveling Massage Business</h1>
+    </header>
+
+
+    <nav>
+        <ul class=""menu-list>
+            <li><a href="Services2.html" class="nav-button">Services</a></li>
+            <li><a href="About2.html" class="nav-button">About</a></li>
+        </ul>
+    </nav>
+
+        <main>
+       
+         <h2>Scroll Over Images To Display Spa Package</h2>
+                <!-- Images with links to Squarespace booking page -->
+                <div class="booking-images">
+                    <a href="https://massage-bookings.square.site/" target="_blank" class="image-container" data-text="Click to book 60 Minute Massage">
+                        <img src="mathposey_A_beautiful_lamb_surrounded_by_flowers_with_a_dark_ba_97718535-6d29-416b-be73-1ff092c4b0a1.webp" alt="Booking-Image-1" style="width: auto; height: 100%;">
+                    </a>
+                    <a href="https://massage-bookings.square.site/" target="_blank" class="image-container" data-text="Click to book 90 Minute Massage">
+                        <img src="FlowerLionDeepTissueMassageImage.webp" alt="Booking Image 2" style="width: auto; height: 100%;">
+                    </a></h3>
+        </main>
+
+    <footer>
+        <h2>Contact Us</h2>
+                <p>Reach out to us to schedule your appointment or if you have any questions.</p>
+                <address>
+                    Email: <a href="mailto:MattJPosey@gmail.com">MattJPosey@gmail.com</a><br>
+                    Phone: (707) 980-1394
+                </address>
+                <!-- Add the "Google Calendar" button with the Google Calendar link -->
+                <a href="https://calendar.google.com/calendar/embed?src=mattjposey%40gmail.com&ctz=America%2FLos_Angeles" target="_blank" class="Google-Calendar-button">Google Calendar</a>
+                <p>&copy; 2023 Your Massage Therapist. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
